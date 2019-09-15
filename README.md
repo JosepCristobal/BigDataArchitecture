@@ -115,7 +115,7 @@ Procedemos al montaje y detallamos los pasos con las siguientes imágenes y come
  
 ![insertar imagen GCP](./images/CP05.png)
 
- * 
+ * A continuación, utilizaremos el Beeline para ejecutar los comandos de creación, carga y consulta de datos.
 
 
 
