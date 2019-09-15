@@ -74,5 +74,9 @@ Procedemos al montaje y detallamos los pasos con las siguientes imágenes y come
 
 ![insertar imagen GCP](./images/CP07.png)
 
+* Una vez montada la infraestructura de Cloud, procederemos a subir los Datasets/ficheros que previamente hemos obtenido por diferentes medios y que hemos limpiado con bloc de notas y/o Trifacta. Cada uno subirá a su carpeta correspondiente, como hemos indicado en el punto anterior, haciéndolo de forma manual (Staging).
+
+![insertar imagen GCP](./images/CP08.png)
+
 
 
