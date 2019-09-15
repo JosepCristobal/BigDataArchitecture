@@ -60,5 +60,19 @@ Procedemos al montaje y detallamos los pasos con las siguientes imágenes y come
 
 ![insertar imagen GCP](./images/CP05.png)
 
+* Una vez montado el cluster, Google nos da unas máquinas preparadas y con todos los servicios que necesitamos par nuestra infraestructura.
+
+* A continuación, vamos a revisar si Google nos ha montado una unidad de almacenamiento llamada Google Storage y vamos a configurarla.
+
+* El Google Storage lo utilizaremos como lugar de almacenamiento de nuestros datasets y otros ficheros. Con ello evitamos utilizar el HDFS de forma directa (internamente se utiliza) siendo su rendimiento parecido o igual. Otra gran ventaja es, en el momento que destruyamos nuestro cluster, esta unidad no se borra y esto es muy útil si queremos volver a crear otro cluster o acceder a sus datos.
+
+![insertar imagen GCP](./images/CP06.png)
+
+* Ahora dentro de Google Storage, vamos a crear los directorios que utilizaremos para recoger datasets y depositar resultados. 
+
+* Los directorios a crear, son los que se detallan en el Diagrama, en el área de G. Storage.
+
+![insertar imagen GCP](./images/CP07.png)
+
 
 
