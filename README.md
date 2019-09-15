@@ -45,3 +45,10 @@ Se han invertido muchísimas horas en intentarlo y al final los resultados no ha
 
 ![insertar imagen Trifacta](./images/Trifacta01.png)
 
+## 3. Montar infraestructura de Cluster para el proyecto
+Vamos a utilizar Google Cloud Platform para montar un cluster de 3 contenedores configurados para alojar Hadoop y sus complementos.
+Nos apoyaremos, a nivel de almacenamiento, con Google Cloud Storage.
+Procedemos al montaje y detallamos los pasos con las siguientes imágenes y comentarios.
+
+
+
