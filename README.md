@@ -1,4 +1,4 @@
-##Big Data Architecture			
+## Big Data Architecture			
 ### Práctica realizada por Josep Cristobal. Entrega el  15/09/2019
 
 . Nos piden diseñar, especificar y desplegar un datalake para el procesamiento de datos provenientes de fuentes de datos no estructurados extraídos mediante técnicas de scraping/crawling de sitios de dominio público.
