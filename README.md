@@ -78,5 +78,30 @@ Procedemos al montaje y detallamos los pasos con las siguientes imágenes y come
 
 ![insertar imagen GCP](./images/CP08.png)
 
+* En este punto ya tenemos nuestros datos subidos al cluster para poder ser procesados.
+
+* Vamos a crear un job donde vamos a lanzar una tarea sobre el dataset de airbnbTF.csv para contar palabras (wordcount). Los resultados los vamos a depositar en un directorio /output dentro de Google Storage.
+
+![insertar imagen GCP](./images/CP09.png)
+
+* El primer Job ha fallado, no encontraba la unidad de GS. He modificado la ruta de entrada a gs:///input/airbnb y la de salida en gs:///output/ y todo se ha procesado de forma correcta.
+
+![insertar imagen GCP](./images/CP11.png)
+
+![insertar imagen GCP](./images/CP13.png)
+
+* Y por último, hemos obtenido el resultado en forma de varios ficheros.
+
+![insertar imagen GCP](./images/CP14.png)
+
+* Con todo ello ya hemos conseguido obtener los datos deseados para ser procesados y enviados por email a nuestro cliente.
+
+* Para el envío de emails, con toda la información reuqerida, utilizaremos la plataforma de envio de correos de MailChimp y si el servicio nos devuelve el OK procederemos a guardar un registro/objeto en una BBDD de Mongo para su posterior explotación.
+
+* Escogemos MailChimp ya que funciona a traves de una llamada a su api, nos da información del estado de los envíos y muchas ventajas más
+
+
+
+
 
 
