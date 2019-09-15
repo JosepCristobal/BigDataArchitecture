@@ -40,7 +40,7 @@
 Se han invertido muchísimas horas en intentarlo y al final los resultados no han sido los esperados. Dejo esta parte para el final. No quiero encallarme en este punto y no poder entregar el resto de práctica.
 	
 ## 2.1 Descarga de dataset de Airbnb
-* Prodedemos a la descarga al dataset de airbnb.csv con datos estructurados.
+* Procedemos a la descarga del dataset de airbnb.csv con datos estructurados.
 * Aplicamos filtros de limpieza de datos para obtener un dataset más fiable y que no nos provoque problemas. Para ello hemos abierto el bloc de notas para hacer una primera inspección y posteriormente hemos utilizado Trifacta Wrangler para, a través de reglas, limpiar los datos y evitar inconsistencias.
 
 ![insertar imagen Trifacta](./images/Trifacta01.png)
