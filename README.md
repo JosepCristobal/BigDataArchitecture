@@ -117,6 +117,26 @@ Procedemos al montaje y detallamos los pasos con las siguientes imágenes y come
 
  * A continuación, utilizaremos el Beeline para ejecutar los comandos de creación, carga y consulta de datos.
 
+![insertar imagen GCP](./images/CP16.png)
+
+![insertar imagen GCP](./images/CP17.png)
+
+ * Una vez creada la tabla, insertamos los datos que obtendremos del dataset de airbnb, que se encuentra en Google Storage de nuestra infraestructura.
+ 
+ * Una vez ejecutado el proceso, verificaremos que los datos hayan sido cargados correctamente.
+ 
+ ![insertar imagen GCP](./images/CP18.png)
+ 
+ * Ya tenemos todos los datos disponibles para realizar consultas y cálculos.
+ 
+ * Ahora vamos a realizar las consultas que nos darán los datos que perseguimos en nuestro proyecto. El resultado lo dejaremos en Google Storage en la carpeta /output y quedará todo listo para generar el correo electrónico y enviarlo a nuestros clientes con el resultado.
+ 
+ ![insertar imagen GCP](./images/CP19.png)
+ 
+ ![insertar imagen GCP](./images/CP20.png)
+ 
+ 
+
 
 
 
