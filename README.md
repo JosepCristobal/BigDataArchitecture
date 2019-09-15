@@ -33,6 +33,6 @@
 
 
 ## 1. Diagrama de flujo de datos y herramientas utilizadas.
-	![insertar imagen](./images/DiagramaBDA.png)
+![insertar imagen](./images/DiagramaBDA.png)
 	
 
