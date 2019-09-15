@@ -30,3 +30,9 @@
 	* Incorporación de datos en Hive.
 	* Procesamiento de datos a las 12:55, aplicaremos el proceso necesario para extraer los datos (actualmente no tengo conocimientos necesarios para hacerlo) que nos indicarán los 10 locales y 10 pisos que estén en venta en las 2 zonas de mayor oferta/demanda de pisos de alquiler, fundamentados en los datos de airbnb.
 	* Diariamente a las 13:00, envío de correo con los resultados obtenidos, a todas las cuentas suscritas para recibirlo.
+
+
+* ## 1. Diagrama de flujo de datos y herramientas utilizadas.
+	![insertar imagen](./images/DiagramaBDA.png)
+	
+
