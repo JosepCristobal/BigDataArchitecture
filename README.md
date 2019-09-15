@@ -39,13 +39,13 @@
 
 Se han invertido muchísimas horas en intentarlo y al final los resultados no han sido los esperados. Dejo esta parte para el final. No quiero encallarme en este punto y no poder entregar el resto de práctica.
 	
-## 2.1 Descarga de dataset de Airbnb
+## 2.1 Descarga de dataset de Airbnb.
 * Procedemos a la descarga del dataset de airbnb.csv con datos estructurados.
 * Aplicamos filtros de limpieza de datos para obtener un dataset más fiable y que no nos provoque problemas. Para ello hemos abierto el bloc de notas para hacer una primera inspección y posteriormente hemos utilizado Trifacta Wrangler para, a través de reglas, limpiar los datos y evitar inconsistencias.
 
 ![insertar imagen Trifacta](./images/Trifacta01.png)
 
-## 3. Montar infraestructura de Cluster para el proyecto
+## 3. Montar infraestructura de Cluster para el proyecto.
 Vamos a utilizar Google Cloud Platform para montar un cluster de 3 contenedores configurados para alojar Hadoop y sus complementos.
 Nos apoyaremos, a nivel de almacenamiento, con Google Cloud Storage.
 Procedemos al montaje y detallamos los pasos con las siguientes imágenes y comentarios.
@@ -61,6 +61,8 @@ Procedemos al montaje y detallamos los pasos con las siguientes imágenes y come
 ![insertar imagen GCP](./images/CP05.png)
 
 * Una vez montado el cluster, Google nos da unas máquinas preparadas y con todos los servicios que necesitamos par nuestra infraestructura.
+
+## 4. Storage y proceso.
 
 * A continuación, vamos a revisar si Google nos ha montado una unidad de almacenamiento llamada Google Storage y vamos a configurarla.
 
@@ -100,8 +102,10 @@ Procedemos al montaje y detallamos los pasos con las siguientes imágenes y come
 
 * Según recibamos la respuesta del api de MailChimp, guardaremos un registro/objeto en una BBDD Mongo para su posterior explotación.
 
-* Escogemos MailChimp por que nos permite interactuar con su api de forma muy comoda, es un sistema que lleva tiempo funcionando y es fiable, nos aporta información del estado de los envíos, etc.
+* Escogemos MailChimp por que nos permite interactuar con su api de forma muy comoda. Es un sistema que lleva tiempo funcionando, es fiable y nos aporta información del estado de los envíos.
 
+ 
+ ## 4. Hive
  
 
 
