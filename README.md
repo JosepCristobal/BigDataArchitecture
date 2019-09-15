@@ -51,10 +51,13 @@ Nos apoyaremos, a nivel de almacenamiento, con Google Cloud Storage.
 Procedemos al montaje y detallamos los pasos con las siguientes imágenes y comentarios.
 
 * Creamos el cluster en Google Cloud Plataform
+
 ![insertar imagen GCP](./images/CP02.jpg)
+
 ![insertar imagen GCP](./images/CP04.jpg)
 
 * En el cluster hemos creado una máquina máster y dos esclavas. Para poder acceder a la master por SSH, podemos abrir un terminal directo de Google para trabajar bajo el entorno de navegador.
+
 ![insertar imagen GCP](./images/CP05.jpg)
 
 
