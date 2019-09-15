@@ -32,7 +32,7 @@
 	* Diariamente a las 13:00, envío de correo con los resultados obtenidos, a todas las cuentas suscritas para recibirlo.
 
 
-* ## 1. Diagrama de flujo de datos y herramientas utilizadas.
+## 1. Diagrama de flujo de datos y herramientas utilizadas.
 	![insertar imagen](./images/DiagramaBDA.png)
 	
 
