@@ -1,5 +1,6 @@
 ## Big Data Architecture			
-### Práctica realizada por Josep Cristobal. Entrega el  15/09/2019
+### Práctica realizada por Josep Cristobal. 
+### Entrega el  15/09/2019
 
 . Nos piden diseñar, especificar y desplegar un datalake para el procesamiento de datos provenientes de fuentes de datos no estructurados extraídos mediante técnicas de scraping/crawling de sitios de dominio público.
 
@@ -15,7 +16,7 @@
 	* Utilizaremos para guardar nuestos ficheros, Google Storage.
 	* Crawlearemos con la herramienta Scrapy, desde un Colaboratory, las webs de milanuncios y habitaclia.
 	* Para enviar los correos con la información diaria ya descrita, utilizaremos un servicio rest que nos facilitará nuestro proveedor de correo.
-	* El servicio rest recibirá los datos en formato Json que habremos generado con Python. Una vez enviado el correo y habiendo recibido el ok, utilizaremos MongoDB para almacenar los datos pertenecientes al envio del correo para una futura explotación de estos.
+	* El servicio rest recibirá los datos en formato Json que habremos generado con Python. Una vez enviado el correo y habiendo recibido el ok o ko, utilizaremos MongoDB para almacenar los datos pertenecientes al envio del correo para una futura explotación de estos.
 	* Para el envío de correos utilizaremos la plataforma de MailChimp.
 	* La limpieza de ficheros la realizaremos con Trifacta, si son de gran tamaño. Para datasets pequeños, utilizaremos herramientas como el bloc de notas o similares.
 
@@ -29,7 +30,7 @@
 	* Subida de los datasets a Google Cloud Storage.
 	* Incorporación de datos en Hive.
 	* Procesamiento de datos a las 12:55, aplicaremos el proceso necesario para extraer los datos (actualmente no tengo conocimientos necesarios para hacerlo) que nos indicarán los 10 locales y 10 pisos que estén en venta en las 2 zonas de mayor oferta/demanda de pisos de alquiler, fundamentados en los datos de airbnb.
-	* Diariamente a las 13:00, envío de correo con los resultados obtenidos, a todas las cuentas suscritas para recibirlo.
+	* Diariamente a las 13:00, envío de correo con los resultados obtenidos, a todas las cuentas suscritas.
 
 
 ## 1. Diagrama de flujo de datos y herramientas utilizadas.
@@ -41,7 +42,7 @@ Se han invertido muchísimas horas en intentarlo y al final los resultados no ha
 	
 ## 2.1 Descarga de dataset de Airbnb.
 * Procedemos a la descarga del dataset de airbnb.csv con datos estructurados.
-* Aplicamos filtros de limpieza de datos para obtener un dataset más fiable y que no nos provoque problemas. Para ello hemos abierto el bloc de notas para hacer una primera inspección y posteriormente hemos utilizado Trifacta Wrangler para, a través de reglas, limpiar los datos y evitar inconsistencias.
+* Aplicamos filtros de limpieza de datos para obtener un dataset más fiable y que no nos provoque problemas. Para ello hemos abierto el bloc de notas para hacer una primera inspección y posteriormente hemos utilizado Trifacta Wrangler para limpiar los datos y evitar inconsistencias, definiendo reglas para ello.
 
 ![insertar imagen Trifacta](./images/Trifacta01.png)
 
@@ -86,7 +87,7 @@ Procedemos al montaje y detallamos los pasos con las siguientes imágenes y come
 
 ![insertar imagen GCP](./images/CP09.png)
 
-* El primer Job ha fallado, no encontraba la unidad de GS. He modificado la ruta de entrada a gs:///input/airbnb y la de salida en gs:///output/ y todo se ha procesado de forma correcta.
+* El primer Job ha fallado, no encontraba la unidad de GS. He modificado la ruta de entrada a gs://input/airbnb y la de salida en gs://output/ y todo se ha procesado de forma correcta.
 
 ![insertar imagen GCP](./images/CP11.png)
 
@@ -102,7 +103,7 @@ Procedemos al montaje y detallamos los pasos con las siguientes imágenes y come
 
 * Según recibamos la respuesta del api de MailChimp, guardaremos un registro/objeto en una BBDD Mongo para su posterior explotación.
 
-* Escogemos MailChimp por que nos permite interactuar con su api de forma muy comoda. Es un sistema que lleva tiempo funcionando, es fiable y nos aporta información del estado de los envíos.
+* Escogemos MailChimp por que nos permite interactuar con su api de forma muy comoda. Es un sistema que lleva tiempo funcionando, es fiable y nos aporta información del estado de los correos.
 
  
  ## 4. Hive
