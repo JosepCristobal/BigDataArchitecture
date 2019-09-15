@@ -107,6 +107,12 @@ Procedemos al montaje y detallamos los pasos con las siguientes imágenes y come
  
  ## 4. Hive
  
+ * Por último, vamos a utilizar Hive como base para almacenar y analizar los datos de la práctica/proyecto.
+ 
+ * Seguimos trabajando con el cluster de Google cloud que tenemos creado. Hive es una de las piezas que viene ya instalada por defecto y solo tenemos que empezar a utilizarla.
+ 
+ * En primer lugar, abrimos la ventana del CLI que nos facilita Google en su insfraestructura.
+ 
 
 
 
