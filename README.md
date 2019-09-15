@@ -113,7 +113,9 @@ Procedemos al montaje y detallamos los pasos con las siguientes imágenes y come
  
  * En primer lugar, abrimos la ventana del CLI que nos facilita Google en su insfraestructura.
  
+![insertar imagen GCP](./images/CP05.png)
 
+ * 
 
 
 
