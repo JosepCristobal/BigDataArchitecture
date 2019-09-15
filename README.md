@@ -94,11 +94,15 @@ Procedemos al montaje y detallamos los pasos con las siguientes imágenes y come
 
 ![insertar imagen GCP](./images/CP14.png)
 
-* Con todo ello ya hemos conseguido obtener los datos deseados para ser procesados y enviados por email a nuestro cliente.
+* Con todo ello ya hemos conseguido obtener los datos deseados para ser procesados y enviados por correo a nuestro cliente.
 
-* Para el envío de emails, con toda la información reuqerida, utilizaremos la plataforma de envio de correos de MailChimp y si el servicio nos devuelve el OK procederemos a guardar un registro/objeto en una BBDD de Mongo para su posterior explotación.
+* Para el envío de correos, utilizaremos la plataforma de MailChimp.
 
-* Escogemos MailChimp ya que funciona a traves de una llamada a su api, nos da información del estado de los envíos y muchas ventajas más
+* Según recibamos la respuesta del api de MailChimp, guardaremos un registro/objeto en una BBDD Mongo para su posterior explotación.
+
+* Escogemos MailChimp por que nos permite interactuar con su api de forma muy comoda, es un sistema que lleva tiempo funcionando y es fiable, nos aporta información del estado de los envíos, etc.
+
+ 
 
 
 
